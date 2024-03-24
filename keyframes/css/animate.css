@@ -1,0 +1,81 @@
+body {
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
+}
+
+.container { 
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        grid-column-gap: 10px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+     }
+
+
+#banner {
+    width:1000px;
+    background:url('../images/camino_8.png');
+    height:300px;
+
+    border:2px solid rgb(102, 101, 101);
+
+    grid-template-columns: 1/13;
+}
+
+
+.box1 {
+    top:100px;
+    width: 400px;
+    height: 200px;
+    font-size: 48px;
+
+  }
+
+  .box2 {
+    top:125px;
+    font-size: 56px;
+    width: 800px;
+    opacity:0;
+    height: 100px;
+    left: 355px;
+  }
+
+  .box3 {
+    top:200px;
+    font-size: 36px;
+    width: 200px;
+    opacity:0;
+    height: 100px;
+    right: -500px;
+  }
+
+  .box4 {
+    top:200px;
+    font-size: 36px;
+    width: 200px;
+    opacity:0;
+    height: 100px;
+    left: 516px;
+  }
+  
+
+
+  @keyframes leftOne {
+
+  }
+
+
+  @keyframes leftTwo {
+
+  }
+
+
+  @keyframes rightOne {
+
+  }
+
+
+  @keyframes rightTwo {
+
+  }
