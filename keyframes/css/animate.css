@@ -21,61 +21,79 @@ body {
     border:2px solid rgb(102, 101, 101);
 
     grid-template-columns: 1/13;
+    animation: bannerAnim;
+    animation-duration: 4s;
 }
 
 
 .box1 {
     top:100px;
     width: 400px;
-    height: 200px;
     font-size: 48px;
-
+    animation: leftOne 1s ease forwards;
   }
 
   .box2 {
-    top:125px;
     font-size: 56px;
     width: 800px;
-    opacity:0;
     height: 100px;
     left: 355px;
+    animation: leftTwo; 
+    animation-duration: 3s;
+    color: blue;
+    animation-delay: 2s
   }
 
   .box3 {
     top:200px;
     font-size: 36px;
     width: 200px;
-    opacity:0;
     height: 100px;
     right: -500px;
+    animation: rightOne;
+    animation-duration: 2s;
+    animation-delay: 4s; 
   }
 
   .box4 {
     top:200px;
     font-size: 36px;
     width: 200px;
-    opacity:0;
-    height: 100px;
+    height: 45px;
     left: 516px;
+    animation: rightTwo;
+    animation-duration: 3s;
+    animation-delay: 3s;
   }
   
 
 
   @keyframes leftOne {
-
+    0% {opacity: 0; transform: translateX(100%);} 
+    100% {opacity: 1; transform: translateX(0);}
+  
   }
 
 
   @keyframes leftTwo {
-
+   0% {color: blueviolet;}
+   100% {color: blue;}
   }
 
 
   @keyframes rightOne {
-
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(45deg);}
+  100% {transform: rotate(0deg);}
   }
 
 
   @keyframes rightTwo {
+  0% {background-image: linear-gradient(to right, blue, blueviolet);}
+  100% {background-image: linear-gradient(to right, red, orange);}}
 
+
+  @keyframes bannerAnim {
+  0% {border-radius: 50%;}
+  100% {border-radius: 100%;}
   }
